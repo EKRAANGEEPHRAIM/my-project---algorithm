@@ -1,0 +1,268 @@
+
+
+body{
+    background-color: whitesmoke;
+    color:black;
+}
+/* creation des icones d'en tete */
+.container-icons{
+display: flex;
+justify-content: flex-start;
+gap: 30px;
+
+}
+.icon{
+    color: black;
+}
+/* creation des boutons d 'en tete */
+.but-mode{
+position:absolute;
+top: 8%;
+right:50%;
+width: auto;
+height: 30px;;
+margin: 0px 5px 25px 15px;
+}
+.mode-normal{
+    font-size: 15px;
+}
+.mode-text{
+    font-size: 15px;
+}
+
+.mode:hover{
+    background-color: gray;
+    border: 1px solid black;
+}
+/* create right header */
+.right-header{
+position: absolute;
+top: 1%;
+right: 50px;
+background-color: rgba(0, 102, 255, 0.623);
+color: aliceblue;
+border-radius: 10px;
+font-size: 25px;
+ font-family: Arial, Helvetica, sans-serif;
+border: 1px solid white;
+}
+.p-right-header{
+position: absolute;
+top: 7%;
+right: 115px;
+bottom: 1%;
+}
+.graphic{
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    background-color:rgba(0, 102, 255, 0.623) ;
+    color: white;
+    font-size:25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+/* create  a grid */
+.grid{
+    position: absolute;
+    top: 22%;
+    right: 2%;
+    left: 55%;
+    width: 550px; 
+    height: 600px; 
+    margin:2px 0px 5px 50px ;
+    background-color:white;
+    border:1px solid black;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(6, 1fr); 
+grid-template-rows: repeat(10, 1fr);
+}
+.grid-item{
+border: 1px solid black;
+padding: 10px;
+}
+
+
+
+/* create the section with several buttons */
+#about-algorithm{
+    width: 44%;
+    height: 75px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 25px;
+
+}
+
+#setting {
+    background-color: gainsboro;
+    height: 25px;
+    color:black;
+}
+
+#change{
+    margin-left: 10px;
+    content: Changer;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-right: 10px ;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+}
+#change:hover{
+background-color: gray;
+}
+
+/* le carreau jaune */
+#extension-used{
+    border: 1px solide black;
+    border-radius: 1px;
+    background-color: yellow;
+    width: 17%;
+}
+
+/* premier textarea */
+textarea{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/* buttom modifier line */
+ #modify-line{
+position: absolute;
+top:42% ;
+margin:5px 0 5px 10px;
+border-radius: 2px;
+width: 23%;
+height: 50px;
+background-color: gainsboro;
+ }
+#modify-line:hover{
+   background-color: gray; 
+}
+
+/* button delete/block */
+#garbage{
+position: absolute;
+top:52% ;
+margin:5px 0 3px 10px;
+width: 23%;
+height: 50px;
+background-color: gainsboro;
+}
+#garbage:hover{
+background-color: gray;
+}
+span{
+text-align: center;
+font-size: 22px;
+font-family: Arial, sans-serif;
+}
+
+/* yellow textarea */
+#yellow-textarea{
+position: absolute;
+top: 62%;
+margin: 0 1px 10px 5px; 
+color:black;
+background-color: yellow;
+}
+
+/* test-algorithm */
+#test-algorithm{
+position: absolute;
+top: 116%; 
+margin: 10px 0 5px 10px;
+width: 23%;
+height: 50px;
+}
+#test-algorithm:hover{
+background-color: gray;
+}
+
+/* new line */
+#new-line{
+position: absolute;
+top: 128%; 
+margin:13px 0 5px 10px;  
+width: 23%;
+height: 50px;
+}
+#new-line:hover{
+background-color: gray;
+}
+/* black textarea */
+#black-textarea{
+    position: absolute;
+    top:125%;
+    right:14% ;
+    background-color: #000;
+    color: yellow;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+/*
+button botton-right */
+#bottom-right{
+    position: absolute;
+    right:1% ;
+    top: 125%;
+    left: 85%;
+    margin: 5px 0 20px 20px;
+}
+button{
+    width: 170px;
+    height: 55px;
+    text-align: center;
+    font-size: 10px;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+
+
+#continue{
+    background-color: gray;
+}
+
+/* bottom grid */
+.grid-button{
+    position: absolute;
+    top: 142%;
+    left: 1%;
+    width: 780px; 
+    height: 250px; 
+    background-color: white;
+
+}
+.grid-button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.item-header{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,10px);
+    border: 1px solid gray;
+    font-size: 20px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    background-color:gray ;
+    border: 1px solid black;
+    padding: 3px;
+}
+.item{
+    margin: 5px 5px 5px 5px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    color: gray;
+}

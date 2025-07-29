@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <title>My application</title>
+</head>
+<body>
+   
+     
+         <!-- to create the icons -->
+        <div class="container-icons">
+
+            <div class="icon">
+   <p>new</p>
+<i class=" fa-solid fa-file fa-3x"></i>
+        </div>
+
+
+     <div class="icon">
+<p>Open</p>
+<i class=" fa-solid fa-folder fa-3x"></i>
+     </div>
+
+
+<div class="icon">
+    <p>Saved</p>
+    <i class="fa-solid fa-floppy-disk fa-3x"></i>
+</div>
+
+
+<div class="icon">
+    <p>Test</p>
+    <i class="fa-solid fa-caret-right fa-3x"></i>
+</div>
+        </div>
+
+<!-- to creation the  buttons in center -->
+<div class="but-mode">
+<button class="mode-normal" >Mode normal</button>
+    <button class="mode-text"> Mode editeur de texte</button>
+</div>
+<br>
+
+  <!-- create p and span top right  -->
+ <span class="right-header">Algobox:courbe_fonction_par_morceaux</span>
+ <p class="p-right-header">Courbe représentative d'une founction definie par morceaux</p>
+ <span class="graphic">Graphique</span>
+ 
+ <!-- create a right grid -->
+ <div class="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+<form >
+    <label for="about-algorithm">A propos de l'algorithmne :</label>
+    <input type="text" id="about-algorithm" name="algorithm" placeholder="Courbe representative d'une fonction definie par morceaux">
+<br><br>
+
+<!-- creation options -->
+    <label for="setting-algorithm">Paramètre de cet algorithmne :</label>
+    <select  id="setting">
+        <option value="1">Arrondi auto :vrai</option>
+        <option value="2">tracer la  courbe</option>
+    </select>
+    <!-- to create buttom change -->
+<button id="change">Change</button>
+
+<label for="extension-used">Extension utilisée</label>
+<input type="text" name="extension-used" id="extension-used">
+<br><br>
+<!-- to create "textarea's function" -->
+<textarea rows="39px" cols="60px" id="textarea-function"></textarea>
+
+<!-- to create "button modify-line" -->
+     <button id="modify-line">
+      <i class="fa-solid fa-bars fa-2x"></i>
+       <span>Modifier Line</span>
+     </button>
+
+<!--to create button "delete line/block"  -->
+
+<button id="garbage">
+    <i class="fa-solid fa-trash fa-2x"></i>
+    <span>Supprimer Ligne/Block</span>
+</button>
+
+<!-- create a yellow textarea  -->
+ 
+<textarea id="yellow-textarea"  cols="41px" rows="22px">
+    Pour utiliser une variable ,il faut d'abord la déclarer (bouton "déclarer nouvelle variable").
+Pour ajouter un nouvel élement à l'algorithme , 
+il faut d'abord insérer une nouvelle ligne(bout "Nouvelle ligne "), puis cliquer sur un des boutons disponibles dans les panneaux disponibles en bas de la fenetre. 
+</textarea>
+ <!-- create button  test the algorithm and new line  -->
+ 
+ <button id="test-algorithm">
+    <i class="fa-solid fa-caret-right fa-3x"></i>
+    <span>Tester l'algorithme</span>
+ </button>
+
+ <button id="new-line">
+<i class="fa-solid fa-book"></i>
+<span>nouvelle ligne</span>
+ </button>
+ <br>
+
+<!--create a black textarea  -->
+<textarea id="black-textarea" cols="40px" rows="20px">
+   ⁎⁎algorithme lancé⁎⁎
+
+    ⁎⁎algorithme terminé⁎⁎
+</textarea>
+
+ <!-- create the buttons at bottom right -->
+  <section id="bottom-right">
+<button id="run-algorithm">
+    <i class="fa-solid fa-caret-right fa-2x "></i>
+    <span>lancer Algorithme</span>
+  </button>
+<br><br>
+  <input type="checkbox" name="mode-step-by-step"  id="mode-step-by-step">
+  <label for="mode-step-by-step">Mode pas à pas</label>
+<br><br>
+
+  <button id="continue" >
+ <i class="fa-solid fa-caret-right fa-2x"></i>
+ <span>continue</span>
+  </button>
+
+  <br><br>
+  <button id="stop">
+    <i class="fa-solid fa-ban fa-2x"></i>
+    <span>arreter</span>
+  </button>
+
+  <br><br>
+  <button id="pdf">
+<i class="fa-solid fa-file-pdf fa-2x " style="color: red;"></i>
+<span>Imprimer(pdf)</span>
+  </button>
+  <br><br>
+  <button id="close">
+    <span>Fermer</span>
+  </button>
+
+  </section>
+  
+</form>
+    <br>
+    <!-- grid with  lots of buttons at the buttom -->
+<div class="grid-button">
+<div class="item-header" style="background-color: gainsboro;">Opération standards</div>
+<div class="item-header">Utiliser une fonction numerique</div>
+<div class="item-header">Dessiner dans un répère </div>
+<div class="item-header">Fonctions locales</div>
+<div class="item" style="background-color:white; color: black;">+ Déclarer une nouvelle variable</div>
+<div class="item">+ Ajouter AFFICHER une variable</div>
+<div class="item">+ Ajouter SI ... ALORS </div>
+<div class="item"><em>Pause</em></div>
+<div class="item">+ Ajouter LIRE variable </div>
+<div class="item">+ Ajouter AFFICHER Message</div>
+<div class="item">+ Ajouter POUR DE...A</div>
+<div class="item"><em>Commentaire</em></div>
+<div class="item">+ AFFECTER valeur à variable </div>
+<div class="item">+ Ajouter AFFICHER Calcul</div>
+<div class="item">+ Ajouter TANT QUE </div>
+
+</div>
+ 
+        
+</body>
+</html>
