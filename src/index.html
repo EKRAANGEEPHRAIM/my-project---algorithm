@@ -8,201 +8,472 @@
      <link href="./output.css" rel="stylesheet">
     <title>My application</title>
 </head>
-<body class="body bg-red">
+ <body  class="body bg-whitesmoke
+                    text-black">
    
      
-         <!-- to create the icons -->
-        <div class="container-icons">
+         <!-- to create the icons with tailwind-css -->
+        <div class="
+        container-icons 
+        flex 
+        justify-start
+        gap-[30px]">
+
+              <div class="icon">
+              <p class="p ml-1.5">New</p>
+              <i class=" fa-solid fa-file fa-3x ml-1.5"></i>
+              </div>
+
 
             <div class="icon">
-   <p>new</p>
-<i class=" fa-solid fa-file fa-3x"></i>
-        </div>
+              <p>Open</p>
+              <i class=" fa-solid fa-folder fa-3x"></i>
+            </div>
 
 
-     <div class="icon">
-<p>Open</p>
-<i class=" fa-solid fa-folder fa-3x"></i>
-     </div>
+            <div class="icon">
+            <p>Saved</p>
+            <i class="fa-solid fa-floppy-disk fa-3x"></i>
+            </div>
 
 
-<div class="icon">
-    <p>Saved</p>
-    <i class="fa-solid fa-floppy-disk fa-3x"></i>
-</div>
+            <div class="icon">
+            <p>Test</p>
+            <i class="fa-solid fa-caret-right fa-3x"></i>
+             </div>
+            </div>
 
+<!-- to creation the  buttons in center with tailwind-css -->
+<div class=
+"
+  but-mode 
+  absolute
+  top-10
+  right-1/2  
+  mt-0 mr-1 mb-6 ml-3.5 
+  h-[30px]
+  w-auto
+   
+  ">
+            <button class="
+            mode-normal   
+            border-1 
+            border-black 
+            hover:bg-gray-400 
+            text-2xl">
+            Mode normal
+            </button>
 
-<div class="icon">
-    <p>Test</p>
-    <i class="fa-solid fa-caret-right fa-3x"></i>
-</div>
-        </div>
-
-<!-- to creation the  buttons in center -->
-<div class="but-mode">
-<button class="mode-normal" >Mode normal</button>
-    <button class="mode-text"> Mode editeur de texte</button>
+            <button class="
+              mode-text   
+              border-1 
+              border-black 
+              hover:bg-gray-400 
+              text-2xl">
+              Mode texte
+            </button>
+    
 </div>
 <br>
 
-  <!-- create p and span top right  -->
- <span class="right-header">Algobox:courbe_fonction_par_morceaux</span>
- <p class="p-right-header">Courbe représentative d'une founction definie par morceaux</p>
- <span class="graphic">Graphique</span>
+  <!-- create p and span top right  with tailwind-css-->
+ <span class="
+ right-header 
+ absolute 
+ top-1.5  
+ right-[50px] 
+ bg-blue-700 
+ text-white 
+ rounded-4xl 
+ font-sans 
+ border-1 
+ border-white 
+ text-3xl">
+ Algobox:courbe_fonction_par_morceaux
+</span>
+ <p class="
+ p-right-header
+  absolute 
+  top-16 
+  right-28 ">
+  Courbe représentative d'une founction definie par morceaux
+</p>
+ <span class="
+ graphic 
+ absolute 
+ top-24 
+ right-3/12 
+ bg-blue-800 
+ text-white 
+ text-2xl  
+ font-sans 
+ rounded-xl">
+ Graphique
+</span>
  
- <!-- create a right grid -->
- <div class="grid">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+ <!-- create a right grid wwith tailwind-css -->
+ <div class="
+    grid-container
+    absolute
+    top-40
+    right-0.5
+    mt-0.5 mr-0 mb-1 ml-12
+    bg-white border 
+    border-black 
+    w-[550px]
+    h-[600px]
+    grid
+    grid-cols-6
+    grid-rows-10
+    shadow-lg
+    shadow-gray-500/50
+  ">
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
+        <div class="border border-black"></div>
     </div>
 
 <form >
-    <label for="about-algorithm">A propos de l'algorithmne :</label>
-    <input type="text" id="about-algorithm" name="algorithm" placeholder="Courbe representative d'une fonction definie par morceaux">
+    <label for="about-algorithm">
+      A propos de l'algorithmne :</label>
+    <input class=
+    "
+    border-2
+    border-black
+    rounded-xs
+    w-[44%]
+    h-[75px]
+    font-thin
+    " type="text"id="about-algorithm" name="algorithm" placeholder="Courbe representative d'une fonction definie par morceaux">
 <br><br>
 
-<!-- creation options -->
+<!-- creation options with tailwind-css -->
     <label for="setting-algorithm">Paramètre de cet algorithmne :</label>
-    <select  id="setting">
+    <select class=
+"   h-[25px]
+    text-black
+    bg-gray-600
+    border-[1px]
+    border-black
+"
+    id="setting">
         <option value="1">Arrondi auto :vrai</option>
         <option value="2">tracer la  courbe</option>
     </select>
     <!-- to create buttom change -->
-<button id="change">Change</button>
+<button class=
+"   ml-[10px]
+    mr-[10px]
+    border-[1px]
+    border-black
+    rounded-xs
+    w-[60px]
+    h-[30px]
+    text-[15px]
+    hover:bg-gray-400
+    shadow-lg
+    shadow-gray-500/50
+" id="change">
+Change
+</button>
 
 <label for="extension-used">Extension utilisée</label>
-<input type="text" name="extension-used" id="extension-used">
+<input class=
+" bg-yellow-400
+    border-[1px]
+    border-black
+    rounded-[1px] 
+    w-[210px]
+    h-auto
+    
+" type="text" 
+name="extension-used" 
+id="extension-used">
 <br><br>
-<!-- to create "textarea's function" -->
-<textarea rows="39px" cols="60px" id="textarea-function"></textarea>
+<!-- to create "textarea's function" with tailwind css -->
+<textarea class=
+"   border 
+  border-black 
+    rounded-[2px]
+"
+ rows="26px" 
+ cols="52px" 
+ id="textarea-function"></textarea>
 
-<!-- to create "button modify-line" -->
-     <button id="modify-line">
-      <i class="fa-solid fa-bars fa-2x"></i>
+<!-- to create "button modify-line" with css -->
+     <button class=
+"     absolute
+      top-[42%]
+      right-[560px]
+      mt-[0px] mr-[0px] mb-[5px] ml-[10px]
+      border-[1px]
+      border-black
+      rounded-xs
+      bg-gainsboro
+      w-[300px]
+      h-[50px]
+      hover:bg-gray-600
+      text-2xl
+      shadow-lg
+      shadow-gray-500/50
+" 
+     id="modify-line">
+      <i class="fa-solid fa-bars fa-1x"></i>
        <span>Modifier Line</span>
      </button>
 
-<!--to create button "delete line/block"  -->
+<!--to create button "delete line/block" with tailwind css -->
 
-<button id="garbage">
-    <i class="fa-solid fa-trash fa-2x"></i>
+<button class=
+"     absolute
+      top-[52%]
+      right-[560px]
+      mt-[0px] mr-[0px] mb-[5px] ml-[10px]
+      border-[1px]
+      border-black
+      rounded-xs
+      bg-gainsboro
+      w-[300px]
+      h-[50px]
+      hover:bg-gray-600
+      text-2xl
+      shadow-lg
+      shadow-gray-500/50
+" 
+      id="garbage">
+    <i class="fa-solid fa-trash fa-1x"></i>
     <span>Supprimer Ligne/Block</span>
 </button>
 
-<!-- create a yellow textarea  -->
+<!-- create a yellow textarea  with tailwind-css -->
  
-<textarea id="yellow-textarea"  cols="41px" rows="22px">
+<textarea class=
+"   absolute
+    top-[62%]
+    right-[560px]
+    mr-[10pxpx] mb-[10px] ml-[5px]
+    border-[1px]
+    border-black
+    bg-yellow-300
+    shadow-lg
+    shadow-gray-500/50
+
+" 
+id="yellow-textarea"  
+cols="31px" 
+rows="15px">
     Pour utiliser une variable ,il faut d'abord la déclarer (bouton "déclarer nouvelle variable").
 Pour ajouter un nouvel élement à l'algorithme , 
 il faut d'abord insérer une nouvelle ligne(bout "Nouvelle ligne "), puis cliquer sur un des boutons disponibles dans les panneaux disponibles en bas de la fenetre. 
 </textarea>
  <!-- create button  test the algorithm and new line  -->
  
- <button id="test-algorithm">
+ <button class=
+ "  absolute
+    top-[120%]
+    right-[560px]
+    mt-[10px] mb-[5px] ml-[10px]
+    w-[22%]
+    h-[50px]
+    border-[1px]
+    border-black 
+    hover:bg-gray-500
+    shadow-lg
+    shadow-gray-500/50
+ " 
+ id="test-algorithm">
     <i class="fa-solid fa-caret-right fa-3x"></i>
-    <span>Tester l'algorithme</span>
+    <span class="text-2xl">Tester l'algorithme</span>
  </button>
 
- <button id="new-line">
-<i class="fa-solid fa-book"></i>
-<span>nouvelle ligne</span>
+ <button class=
+ "  absolute
+    top-[130%]
+    right-[560px]
+    mt-[10px] mb-[5px] ml-[10px]
+    w-[22%]
+    h-[50px]
+    border-[1px]
+    border-black 
+    hover:bg-gray-500
+    shadow-lg
+    shadow-gray-500/50
+" 
+ id="new-line">
+<i class="fa-solid fa-book fa-2x"></i>
+<span class="text-2xl">nouvelle ligne</span>
  </button>
  <br>
 
-<!--create a black textarea  -->
-<textarea id="black-textarea" cols="40px" rows="20px">
+<!--create a black textarea with tailwind-css -->
+<textarea class=
+"  absolute
+  top-[125%]
+  right-[14%]
+  mt-[10px] mr-[10px] mb-[5px] ml-[10px]
+  border-[1px]
+  border-black
+  rounded-[2px]
+  text-yellow-400
+  bg-black
+  text-[15px]
+  shadow-lg
+  shadow-gray-500/50
+" 
+  id="black-textarea" 
+  cols="40px" rows="18px">
    ⁎⁎algorithme lancé⁎⁎
 
     ⁎⁎algorithme terminé⁎⁎
 </textarea>
 
  <!-- create the buttons at bottom right -->
-  <section id="bottom-right">
-<button id="run-algorithm">
+  <section class=
+" absolute
+  top-[125%]
+  right-[1%]
+  left-[85%]
+  mt-[5px] mr-[0px] mb-[20px] ml-[20px]
+  
+"  id="bottom-right">
+
+<button class=
+" w-[170px]
+  h-[55px]
+  border-[1px]
+  border-black
+  hover:bg-gray-600
+  rounded-[1px]
+  shadow-lg
+  shadow-gray-500/50
+
+" 
+id="run-algorithm">
     <i class="fa-solid fa-caret-right fa-2x "></i>
-    <span>lancer Algorithme</span>
+    <span class="text-[18px]">
+      lancer 
+      Algorithme</span>
   </button>
 <br><br>
   <input type="checkbox" name="mode-step-by-step"  id="mode-step-by-step">
   <label for="mode-step-by-step">Mode pas à pas</label>
 <br><br>
 
-  <button id="continue" >
+  <button class=
+" w-[170px]
+  h-[55px]
+  border-[1px]
+  border-black
+  rounded-[1px]
+  shadow-lg
+  shadow-gray-500/50
+  text-2xl
+  bg-gray-800
+"  id="continue" >
  <i class="fa-solid fa-caret-right fa-2x"></i>
  <span>continue</span>
   </button>
 
   <br><br>
-  <button id="stop">
+  <button class=
+" w-[170px]
+  h-[55px]
+  border-[1px]
+  border-black
+  hover:bg-gray-600
+  rounded-[1px]
+  shadow-lg
+  shadow-gray-500/50
+  text-2xl
+"  id="stop">
     <i class="fa-solid fa-ban fa-2x"></i>
     <span>arreter</span>
   </button>
 
   <br><br>
-  <button id="pdf">
+  <button class=
+" w-[170px]
+  h-[55px]
+  border-[1px]
+  border-black
+  hover:bg-gray-600
+  rounded-[1px]
+  shadow-lg
+  shadow-gray-500/50
+  text-1xl
+"  id="pdf">
 <i class="fa-solid fa-file-pdf fa-2x " style="color: red;"></i>
 <span>Imprimer(pdf)</span>
   </button>
   <br><br>
-  <button id="close">
+  <button class=
+" w-[170px]
+  h-[55px]
+  border-[1px]
+  border-black
+  hover:bg-gray-600
+  rounded-[1px]
+  shadow-lg
+  shadow-gray-500/50
+  text-2xl
+"  id="close">
     <span>Fermer</span>
   </button>
 
@@ -211,22 +482,161 @@ il faut d'abord insérer une nouvelle ligne(bout "Nouvelle ligne "), puis clique
 </form>
     <br>
     <!-- grid with  lots of buttons at the buttom -->
-<div class="grid-button">
-<div class="item-header" style="background-color: gainsboro;">Opération standards</div>
-<div class="item-header">Utiliser une fonction numerique</div>
-<div class="item-header">Dessiner dans un répère </div>
-<div class="item-header">Fonctions locales</div>
-<div class="item" style="background-color:white; color: black;">+ Déclarer une nouvelle variable</div>
-<div class="item">+ Ajouter AFFICHER une variable</div>
-<div class="item">+ Ajouter SI ... ALORS </div>
-<div class="item"><em>Pause</em></div>
-<div class="item">+ Ajouter LIRE variable </div>
-<div class="item">+ Ajouter AFFICHER Message</div>
-<div class="item">+ Ajouter POUR DE...A</div>
-<div class="item"><em>Commentaire</em></div>
-<div class="item">+ AFFECTER valeur à variable </div>
-<div class="item">+ Ajouter AFFICHER Calcul</div>
-<div class="item">+ Ajouter TANT QUE </div>
+<div class=
+" grid-button
+  absolute
+  top-[150%]
+  left-[1%]
+  w-[780px]
+  h-[250px]
+  bg-white
+  grid
+  grid-cols-4
+  grid-rows-4
+  
+">
+
+<div class=
+"mt-[5px] mr-[0px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+"
+
+>Opération standards</div>
+<div class=
+"mt-[5px] mr-[0px] mb-[5px] ml-[0px]
+border-[1px]
+text-black
+bg-gray-600
+border-black
+bg-gainsboro
+shadow-lg
+shadow-gray-500/50
+
+">Utiliser une fonction numerique</div>
+<div class=
+"mt-[5px] mr-[0px] mb-[5px] ml-[0px]
+bg-gray-600
+border-[1px]
+border-black
+text-black
+shadow-lg
+shadow-gray-500/50
+">Dessiner dans un répère </div>
+
+<div class=
+"mt-[5px] mr-[0px] mb-[5px] ml-[0px]
+bg-gray-600
+border-[1px]
+border-black
+text-black
+shadow-lg
+shadow-gray-500/50
+">Fonctions locales</div>
+
+
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+" style="background-color:white; color: black;">+ Déclarer une nouvelle variable</div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter AFFICHER une variable</div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter SI ... ALORS </div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+"><em>Pause</em></div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter LIRE variable </div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter AFFICHER Message</div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+
+">+ Ajouter POUR DE...A</div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+"><em>Commentaire</em></div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ AFFECTER valeur à variable </div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter AFFICHER Calcul</div>
+<div class=
+"mt-[5px] mr-[5px] mb-[5px] ml-[5px]
+border-[1px]
+border-black
+bg-gainsboro
+text-gray-600
+shadow-lg
+shadow-gray-500/50
+">+ Ajouter TANT QUE </div>
 
 </div>
  
