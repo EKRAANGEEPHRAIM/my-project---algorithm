@@ -4,6 +4,17 @@ body{
     background-color: whitesmoke;
     color:black;
 }
+
+/* creation du container principal */
+#big-big-container{
+    display: grid;
+    grid-template-rows: 58% 42%;
+    width: 100%;
+    border: #000 solid 2px;
+}
+
+
+
 /* creation des icones d'en tete */
 .container-icons{
 display: flex;
